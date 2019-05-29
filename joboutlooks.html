@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Job Outooks | Data Visualisation Project</title>
+            <meta name="author" content="Hoang Viet Nguyen"/>
+            <link href="style/style.css" rel="stylesheet"/>
+
+            <script type="text/javascript" src="javascript/number_of_workers.js"></script>
+            <script type="text/javascript" src="javascript/level_of_education.js"></script>
+            <script type="text/javascript" src="javascript/average_earnings.js"></script>
+            <script type="text/javascript" src="javascript/age_groups.js"></script>
+            <script type="text/javascript" src="javascript/predicted_openings.js"></script>
+            <script type="text/javascript" src="javascript/states.js"></script>
+
+            <script type="text/javascript" src="javascript/d3.min.js"></script>
+            <script type="text/javascript" src="javascript/d3-interpolate.v1.min.js"></script>
+            <script type="text/javascript" src="javascript/d3-scale-chromatic.v1.min.js"></script>
+            <script type="text/javascript" src="javascript/vid_20190517_100813445_s01.js"></script>
+            <script type="text/javascript" src="javascript/colorbrew.js"></script>
+        </head>
+<body>
+
+<header>
+    <h3>Data Visualisation Project</h3>
+</header>
+
+<p>Author: Hoang Viet Nguyen (101272826)</p>
+
+<nav>
+    <a class="selected" href="joboutlooks.html">Job Outlooks</a>
+    <a class="menu" href="costofliving.html">Cost of Living</a>
+    <a class="menu" href="unemploymentinfo.html">Unemployment Info</a>
+</nav>
+
+<br/>
+
+<div>
+    <button type="submit" onclick="return number_of_workers_options();">Number of Workers</button>
+    <button type="submit" onclick="return hide_number_of_workers(true);">Hide</button>
+    <p id="number_of_workers_details"></p>
+    <p id="number_of_workers_title"></p>
+    <p id="number_of_workers"></p>
+    <p id="number_of_workers_legend"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return level_of_education();">Level of Education</button>
+    <button type="submit" onclick="return hide_level_of_education();">Hide</button>
+    <p id="level_of_education_title"></p>
+    <p id="level_of_education"></p>
+    <p id="level_of_education_legend"></p>
+    <p id="level_of_education_details"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return average_earnings();">Weekly Earnings</button>
+    <button type="submit" onclick="return hide_average_earnings();">Hide</button>
+    <p id="average_earnings_title"></p>
+    <p id="average_earnings"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return age_profiles();">Age Profiles</button>
+    <button type="submit" onclick="return hide_age_profiles();">Hide</button>
+    <p id="age_profiles_title"></p>
+    <p id="age_profiles"></p>
+    <p id="age_profiles_legend"></p>
+    <p id="age_profiles_details"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return predicted_openings();">Predicted Job Openings</button>
+    <button type="submit" onclick="return hide_predicted_openings();">Hide</button>
+    <p id="predicted_openings_title"></p>
+    <p id="predicted_openings"></p>
+</div>
+
+
+<div>
+    <button type="submit" onclick="return print_states_options();">States and Territories</button>
+    <button type="submit" onclick="return hide_states(true);">Hide</button>
+    <p id="states_title"></p>
+    <p id="states"></p>
+    <p id="states_details"></p>
+</div>
+
+</body>
+</html>

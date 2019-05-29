@@ -1,0 +1,82 @@
+body, button, select, option {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 1em;
+}
+
+.area {
+    fill: none;
+    stroke: black;
+    stroke-width: 0.5;
+}
+
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+    fill: #ffab00;
+    stroke: #fff;
+}
+
+.focus circle {
+    fill: none;
+    stroke: steelblue;
+}
+
+header {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 15px;
+    color: dodgerblue;
+    margin-top: 20px;
+}
+
+.menu {
+    background-color: lightslategrey;
+    display: inline-block;
+    border: 1px solid #5d5d5d;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-size: 16px;
+    text-decoration: none;
+    color: gold;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+a[class*="menu"]:hover {
+    background-color: gold;
+    color: black;
+}
+
+.selected {
+    background-color: gold;
+    display: inline-block;
+    border: 1px solid #5d5d5d;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    font-family: Verdana;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5d5d5d;
+    text-align: center;
+}

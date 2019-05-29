@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cost of Living | Data Visualisation Project</title>
+    <meta name="author" content="Hoang Viet Nguyen"/>
+    <link href="style/style.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="javascript/costofliving.js"></script>
+
+    <script type="text/javascript" src="javascript/d3.min.js"></script>
+    <script type="text/javascript" src="javascript/d3-interpolate.v1.min.js"></script>
+    <script type="text/javascript" src="javascript/d3-scale-chromatic.v1.min.js"></script>
+    <script type="text/javascript" src="javascript/vid_20190517_100813445_s01.js"></script>
+    <script type="text/javascript" src="javascript/colorbrew.js"></script>
+</head>
+<body>
+
+<header>
+    <h3>Data Visualisation Project</h3>
+</header>
+
+<p>Author: Hoang Viet Nguyen (101272826)</p>
+
+<nav>
+    <a class="menu" href="joboutlooks.html">Job Outlooks</a>
+    <a class="selected" href="costofliving.html">Cost of Living</a>
+    <a class="menu" href="unemploymentinfo.html">Unemployment Info</a>
+</nav>
+
+<br/>
+
+<div>
+    <button type="submit" onclick="return print_options('salary');">Net Salaries</button>
+    <button type="submit" onclick="return hide_costofliving(true, 'salary');">Hide</button>
+    <p id="salary_title"></p>
+    <p id="salary"></p>
+    <p id="salary_sort"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return print_options('renting');">Renting Costs</button>
+    <button type="submit" onclick="return hide_costofliving(true, 'renting');">Hide</button>
+    <p id="renting_details"></p>
+    <p id="renting_title"></p>
+    <p id="renting"></p>
+    <p id="renting_sort"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return print_options('bills');">Bills Costs</button>
+    <button type="submit" onclick="return hide_costofliving(true, 'bills');">Hide</button>
+    <p id="bills_details"></p>
+    <p id="bills_title"></p>
+    <p id="bills"></p>
+    <p id="bills_sort"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return print_options('transport');">Transport Costs</button>
+    <button type="submit" onclick="return hide_costofliving(true, 'transport');">Hide</button>
+    <p id="transport_details"></p>
+    <p id="transport_title"></p>
+    <p id="transport"></p>
+    <p id="transport_sort"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return print_options('groceries');">Groceries Costs</button>
+    <button type="submit" onclick="return hide_costofliving(true, 'groceries');">Hide</button>
+    <p id="groceries_details"></p>
+    <p id="groceries_title"></p>
+    <p id="groceries"></p>
+    <p id="groceries_sort"></p>
+</div>
+
+<div>
+    <button type="submit" onclick="return print_options('eating');">Eating Costs</button>
+    <button type="submit" onclick="return hide_costofliving(true, 'eating');">Hide</button>
+    <p id="eating_details"></p>
+    <p id="eating_title"></p>
+    <p id="eating"></p>
+    <p id="eating_sort"></p>
+</div>
+
+</body>
+</html>

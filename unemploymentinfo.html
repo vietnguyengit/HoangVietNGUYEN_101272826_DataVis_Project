@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unemployment Info | Data Visualisation Project</title>
+    <meta name="author" content="Hoang Viet Nguyen"/>
+    <link href="style/style.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="javascript/unemployment.js"></script>
+
+    <script type="text/javascript" src="javascript/d3.min.js"></script>
+    <script type="text/javascript" src="javascript/d3-interpolate.v1.min.js"></script>
+    <script type="text/javascript" src="javascript/d3-scale-chromatic.v1.min.js"></script>
+    <script type="text/javascript" src="javascript/vid_20190517_100813445_s01.js"></script>
+    <script type="text/javascript" src="javascript/colorbrew.js"></script>
+</head>
+
+<body onload="return unemployment_options();">
+
+<header>
+    <h3>Data Visualisation Project</h3>
+</header>
+
+<p>Author: Hoang Viet Nguyen (101272826)</p>
+
+<nav>
+    <a class="menu" href="joboutlooks.html">Job Outlooks</a>
+    <a class="menu" href="costofliving.html">Cost of Living</a>
+    <a class="selected" href="unemploymentinfo.html">Unemployment Info</a>
+</nav>
+
+<br/>
+
+<div>
+    <p id="unemployment_details"></p>
+    <p id="unemployment_title"></p>
+    <p id="unemployment_info"></p>
+    <p id="unemployment"></p>
+</div>
+
+</body>
+</html>
